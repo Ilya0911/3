@@ -1,6 +1,5 @@
 #include "temp.h"
-#include <assert>
-
+#include <сassert>
 
 int main(){
     temperature temp;

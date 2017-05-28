@@ -5,9 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES main.cpp temp.cc)
 
-set(CMAKE_EXE_LINKER_FLAGS -static)
-
-add_executable(test_input.cc temp.cc temp.h)
+add_executable(test_input test_input.cc temp.cc)
 
 add_executable(lab03-master ${SOURCE_FILES})
 
