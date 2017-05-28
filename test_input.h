@@ -1,7 +1,7 @@
 #include "temp.h"
 #include <sstream>
 #include <iostream>
-#include <сassert>
+#include <cassert>
 
 #ifndef UNTITLED_TEMPERATURE_H
 #define UNTITLED_TEMPERATURE_H
