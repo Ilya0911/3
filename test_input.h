@@ -1,4 +1,7 @@
-#include<sstream>
+#include "temp.h"
+#include <sstream>
+#include <iostream>
+
 
 #ifndef UNTITLED_TEMPERATURE_H
 #define UNTITLED_TEMPERATURE_H
@@ -9,6 +12,6 @@ struct temperature
     char scale;
 };
 
-bool check(temperature input);
+void main();
 
 #endif

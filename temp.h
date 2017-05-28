@@ -4,7 +4,11 @@
 #define UNTITLED_TEMPERATURE_H
 
 
-
+enum scale {
+    Kelvin = 'K',
+    Fahrenheit = 'F',
+    Celsius = 'K'
+};
 
 struct temperature
 {
@@ -21,7 +25,7 @@ bool isless(temperature input1,temperature input2);
 
 bool check(temperature input);
 
-#endif //UNTITLED_TEMPERATURE_H
+#endif  //UNTITLED_TEMPERATURE_H
 
 //
 // Created by u211-04 on 20.04.2017.

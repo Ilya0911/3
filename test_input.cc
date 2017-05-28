@@ -1,24 +1,23 @@
-#include"temp.h"
-#include<sstream>
-#include<iostream>
+#include "temp.h"
+#include <assert>
 
 
-bool main (temperature input)
-{
-    switch (input.scale){
-    case 'K':
-        if (input.value >= 0)
-            return 1;
+int main(){
+    temperature temp;
+    std::istringstream iss1("10С");
+    iss1>>temp;
+    assert(temp.value == 10);
+    assert(temp.scale == 'K');
 
-    case 'F':
-        if (input.value >= -169.44)
-            return 1;
+    std::istringstream iss2("10F");
+    iss2>>temp;
+    assert(temp.value == 10);
+    assert(temp.scale == 'F');
 
-    case 'C':
-        if (input.value >= -273.15)
-            return 1;
+    std::istringstream iss3("10C");
+    iss3>>temp;
+    assert(temp.value == 10);
+    assert(temp.scale == 'C');
 
-    default:
-        return 0;
-    }
+    return 0;
 }

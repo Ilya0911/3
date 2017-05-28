@@ -3,7 +3,7 @@ project(lab03-master)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp temp.cc test_input.cc)
+set(SOURCE_FILES main.cpp temp.cc)
 
 set(CMAKE_EXE_LINKER_FLAGS -static)
 
