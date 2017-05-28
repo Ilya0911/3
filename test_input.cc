@@ -3,7 +3,7 @@
 
 int main(){
     temperature temp;
-    std::istringstream iss1("10С");
+    std::istringstream iss1("10K");
     iss1>>temp;
     assert(temp.value == 10);
     assert(temp.scale == 'K');
